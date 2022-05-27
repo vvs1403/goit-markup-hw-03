@@ -386,15 +386,21 @@ body {
 .projeсt {
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-between; 
+    margin: -15px;
 
 }
 
-.projeсt-card {
-    width: 370px;
-    height: 404px;
-    background: #FFFFFF;
-    border: 1px solid tomato;
+.project-card {
+    margin: 15px;
+    flex-basis: calc(100%/3-30px);
+}
+
+.bottom-card {
+    padding: 20px 24px;
+    /* background: #FFFFFF; */
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 
 }
 
@@ -407,7 +413,8 @@ body {
 
     width: 322px;
     height: 36px;
-    margin: 20px 24px 4px 24px;
+    margin-bottom: 4px;
+
 }
 
 .projeсt-product {
@@ -417,13 +424,12 @@ body {
 
     width: 322px;
     height: 30px;
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
+
 }
-.projeсt-card {
-    border: 1px solid aqua;
-}
+
+
+
+
 
 
 
