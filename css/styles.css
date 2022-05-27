@@ -421,7 +421,9 @@ body {
     margin-left: 24px;
     margin-right: 24px;
 }
-
+.projeсt-card {
+    border: 1px solid aqua;
+}
 
 
 
