@@ -40,7 +40,6 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .logo {
@@ -51,7 +50,6 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -120,8 +118,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:var(--brand-text-color); 
-       
+    color:var(--brand-text-color);       
 }
 
 .header-tel-item {
@@ -225,8 +222,13 @@ body {
 
 .what-doing-img {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    margin: -15px;
+    margin-top: 65px;
+}
+
+.what-doing-card {
+    flex-basis: calc(100%/3-30px);
+    margin: 15px;
 }
 
 .what-doing-title {
@@ -246,8 +248,9 @@ body {
 
 .team-flex {
     display: flex;
-    justify-content: space-between;
-
+    margin: -15px;
+    margin-top: 65px;
+    
 }
 
 .team-title {
@@ -257,13 +260,14 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--accent-text-color);
-    margin-bottom: 50px;
 }
 .team-member {
     background-color: var(--hero-text-color);
-
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    flex-basis: calc(100%/4-30px);
+    margin: 15px;
 }
 
 .team-member-card {
@@ -364,7 +368,6 @@ body {
     color:var(--hero-text-color);
     cursor: pointer;
 }
-
 
 .projeсt {
     display: flex; 
