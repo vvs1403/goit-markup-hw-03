@@ -15,6 +15,11 @@ p,h1,h2,h3,ul {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 body {
     font-family: var(--font-family-filter);
@@ -30,11 +35,12 @@ body {
     list-style: none;
 }
 
+
 /* Это стили для сайта СТУДИЯ */
 
 .container {
     display: block;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -69,13 +75,12 @@ body {
 
 .contact {
     display: flex;
-    margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-left: auto;    
 }
 
 .header .container {
     display: flex;
+    align-items: center;
 }
 
 .nav-studio,
@@ -118,7 +123,10 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:var(--brand-text-color);       
+    color:var(--brand-text-color); 
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
 }
 
 .header-tel-item {
@@ -157,6 +165,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:var(--hero-text-color);
+
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
@@ -171,6 +180,7 @@ body {
     letter-spacing: 0.06em;
     color:var(--hero-text-color);
     background-color:var(--logo-web-color);
+
     display: block;
     width: 200px;
     height: 50px;
@@ -210,6 +220,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
     max-width: 270px;
     margin-top: 10px;
     min-height: 75px;
@@ -222,13 +233,19 @@ body {
 
 .what-doing-img {
     display: flex;
-    margin: -15px;
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 .what-doing-card {
-    flex-basis: calc(100%/3-30px);
-    margin: 15px;
+    flex-basis: calc((100%-2*30px))/3;
+}
+
+.what-doing-card:not(:nth-child(3n)) {
+margin-right: 30px;
+}
+
+.what-doing-card:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
 }
 
 .what-doing-title {
@@ -242,6 +259,7 @@ body {
 
 .team {
     background-color:var(--team-bg-color);
+
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -282,6 +300,7 @@ body {
     letter-spacing: 0.03em;
     color:var(--accent-text-color);
     text-align: center;
+
     margin-bottom: 10px;
 }
 
@@ -294,6 +313,7 @@ body {
 
 .footer {
     background-color:var(--hero-bg-color);
+
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -341,12 +361,15 @@ body {
 }
 
 .filter {
-    display: flex;
-    margin-bottom: 50px;
+    display: flex;    
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filter-btn {
+    margin-left: 8px;
+    padding: 6px 22px;
+
     font-family: var(--font-family-filter);
     font-weight: 500;
     font-size: 16px;
@@ -356,9 +379,7 @@ body {
     color:var(--accent-text-color);
     background-color:var(--team-bg-color);
     border: 0;
-    border-radius: 4px;
-    padding: 6px 22px;
-    margin-left: 8px;
+    border-radius: 4px;    
 }
 
 .filter-btn:hover,
@@ -372,11 +393,11 @@ body {
 .projeсt {
     display: flex; 
     flex-wrap: wrap;
-    margin: -13px;
+    margin: -15px;
 }
 
 .project-card {
-    margin: 13px;
+    margin: 15px;
     flex-basis: calc(100%/3-30px);
 }
 
@@ -394,8 +415,6 @@ body {
     line-height: 2.0;
     letter-spacing: 0.06em;
     color:var(--accent-text-color);
-    width: 322px;
-    height: 36px;
     margin-bottom: 4px;
 }
 
@@ -403,8 +422,6 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    width: 322px;
-    height: 30px;
 }
 
 
