@@ -65,7 +65,8 @@ body {
 }
 
 .nav {
-    display: flex;    
+    display: flex; 
+    margin-left: 93px;
 }
 
 .header-nav {
@@ -95,10 +96,6 @@ body {
     padding-bottom: 32px;
 }
 
-.nav-studio-item {
-   margin-left: 93px; 
-}
-
 .nav-portfolio-item,
 .nav-contakt-item {
    margin-left: 50px;
@@ -119,11 +116,13 @@ body {
 
 .header-mail,
 .header-tel {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:var(--brand-text-color); 
+    color:var(--brand-text-color);
+
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -267,7 +266,6 @@ body {
 .team-flex {
     display: flex;
     margin: -15px;
-    margin-top: 65px;
     
 }
 
@@ -278,6 +276,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--accent-text-color);
+
+    margin-bottom: 50px;
 }
 .team-member {
     background-color: var(--hero-text-color);
