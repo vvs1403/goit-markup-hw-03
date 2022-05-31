@@ -87,13 +87,16 @@ body {
 .nav-studio,
 .nav-portfolio,
 .nav-contakt {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color:var(--accent-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 
 .nav-portfolio-item,
@@ -226,7 +229,6 @@ body {
 }
 
 .what-doing {
-    padding-top: 94px;
     padding-bottom: 94px;
 }
 
